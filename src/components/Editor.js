@@ -114,4 +114,4 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
     );
 };
 
-export default CodeMirrorEditor;
+export default Editor;
