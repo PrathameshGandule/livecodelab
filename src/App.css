@@ -1,0 +1,255 @@
+body {
+    font-family: 'Roboto';
+}
+
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+}
+
+.formWrapper {
+    background: hsl(231, 15%, 23%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #4aee88;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: hsl(204, 100%, 60%);
+}
+
+.homePageLogo {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background: hsl(204, 100%, 90%);
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.connected-label {
+    color: hsl(204, 100%, 60%);
+}
+
+.copyBtn {
+    background: hsl(204, 100%, 70%);
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.downloadBtn {
+    background: hsl(204, 100%, 70%);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.joinBtn,
+.leaveBtn {
+    background: hsl(30, 100%, 65%);
+    width: 100px;
+    margin-left: auto;
+    margin-top: 0px;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+    background: hsl(30, 100%, 45%);
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.createNewBtn {
+    color: hsl(30, 100%, 65%);
+    text-decoration: none;
+    border-bottom: 1px solid hsl(30, 100%, 65%);
+    transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+    color: hsl(30, 100%, 45%);
+    border-color: hsl(30, 100%, 45%);
+}
+
+.mainWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.aside {
+    background: hsl(231, 15%, 15%);
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: hsl(204, 100%, 70%);
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.userName {
+    margin-top: 9px;
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+
+.logoImage {
+    height: 60px;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+.home-page-name {
+    margin: 0px;
+    margin-bottom: 7px;
+    color: hsl(30, 100%, 65%);
+}
+
+.editor-page-name {
+    margin: 0px;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    margin-left: 3px;
+    color: hsl(30, 100%, 65%);
+}
+
+/* Top Bar Container */
+.monaco-topbar {
+    display: flex;
+    justify-content: space-between;
+    /* Space between dropdown and buttons */
+    align-items: center;
+    background-color: #1e1e1e;
+    /* Match Monaco editor */
+    padding: 10px 15px;
+    /* border-bottom: 1px solid #3c3c3c; */
+}
+
+/* Dropdown Styling */
+.dropdown {
+    background-color: hsl(204, 100%, 60%);
+    color: hsl(0, 0%, 15%);
+    border: 1px solid #3c3c3c;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    background-color: hsl(204, 100%, 50%);
+}
+
+/* Buttons Container (Aligns to Right) */
+.monaco-button-container {
+    display: flex;
+    gap: 10px;
+    /* background: hsl(204, 100%, 70%) */
+}
+
+/* Button Styling */
+.monaco-button {
+    /* background-color: #1e1e1e; */
+    /* color: ; */
+    /* border: 1px solid #3c3c3c; */
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background: hsl(30, 100%, 60%);
+    font-family: 'Roboto';
+}
+
+.monaco-button:hover {
+    background-color: hsl(30, 100%, 50%);
+    /* color: #ffffff; */
+}
+
+.monaco-filename {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+    background: hsl(204, 100%, 80%);
+    color: hsl(0, 0%, 15%);
+    width: 300px;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 10%);
+    /* Darker blue shade */
+    opacity: 0.9;
+    /* Ensures full visibility */
+}
