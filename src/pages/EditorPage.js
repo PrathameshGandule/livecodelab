@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import ACTIONS from '../Actions';
 import Client from '../components/Client';
-import Editor from '../components/Editor';
 import MonacoCodeEditor from '../components/Editor-Monaco';
 import { initSocket } from '../socket';
 import {
