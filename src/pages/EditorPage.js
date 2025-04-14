@@ -99,12 +99,6 @@ const EditorPage = () => {
             <div className="aside">
                 <div className="asideInner">
                     <div className="logo">
-                        {/* <img
-                            className="logoImage"
-                            src="/code-sync.png"
-                            alt="logo"
-                        /> */}
-                        {/* 6c2a445c-ed5c-40fb-afcc-666b7350ed9b */}
                         <h1 className='editor-page-name'>LIVECODELAB</h1>
                     </div>
                     <h3 className='connected-label'>Connected</h3>
