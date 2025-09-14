@@ -6,11 +6,18 @@ const { Server } = require('socket.io');
 const ACTIONS = require('./src/Actions');
 
 const server = http.createServer(app);
-const io = new Server(server);
+const io = new Server(server, {
+    cors: {
+        origin: "*",
+        methods: ["GET", "POST"]
+    }
+});
 
-app.use(express.static('build'));
-app.use((req, res, next) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+const buildPath = path.join(__dirname, 'build');
+app.use(express.static(buildPath));
+
+app.get(/.*/, (req, res) => {
+    res.sendFile(path.join(buildPath, 'index.html'));
 });
 
 const userSocketMap = {};
@@ -71,8 +78,6 @@ io.on('connection', (socket) => {
         socket.leave();
     });
 });
-
-
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
